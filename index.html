@@ -1,21 +1,47 @@
 <html>
 <head>
 <title>Portfolio  &mdash; Zachary Viet Pine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+.score-container {
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+}
+.piece-containter {
+	width: 100%;
+}
+</style>
 </head>
 <body>
-<div id="stuke">
+<div id="stuke" class="piece-container">
 <h2>Piano St&uuml;ke</h2>
-<audio src=""/>
+<iframe src="https://www.youtube.com/embed/7B66WGATKFw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>	
+	<div class="score-container">
+		<object type="image/svg+xml" data="stuke1.svg">
+				Your browser does not support SVG
+		</object>
+	</div>
+	<div class="score-container">
+		<object type="image/svg+xml" data="stuke2.svg">
+				Your browser does not support SVG
+		</object>
+	</div>
 </div>
 
-<div id="bac">
+<div id="bac" class="piece-container">
 <h2>bac.mp3</h2>
-<audio src="bac.mp3"/>
+<audio src="./bac.mp3" controls ></audio>
+	<div class="score-container">
+		<object type="image/svg+xml" data="bac.svg">
+				Your browser does not support SVG
+		</object>
+	</div>
 </div>
 
-<div id="alternating">
+<div id="alternating" class="piece-container">
 <h2>Alternating</h2>
-<audio src="" />
+<audio src="alternating.mp3" controls ></audio>
 </div>
 
 </body>
