@@ -1,48 +1,134 @@
 <html>
 <head>
-<title>Portfolio  &mdash; Zachary Viet Pine</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<style>
-.score-container {
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
-	width: 100%;
-}
-.piece-containter {
-	width: 100%;
-}
-</style>
+	<title>Portfolio of Compositions &mdash; Zachary Viet Pine</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>
+		#portfolio {
+			width: 6.5in;
+			margin: auto;
+		}
+		a {
+			text-decoration: none;
+		}
+		h1 {
+			text-align: center;
+		}
+		#composer {
+			text-align: right;
+		}
+		div#contents {
+			width: 1.25in;
+			margin: auto;
+			line-height: 121%;
+		}
+		p#contents-title {
+			text-align: center;
+		}
+
+		/* For the Scores */
+		h2 {
+			margin-bottom: 0px;
+		}
+		em {
+			font-size: small;
+		}
+		audio {
+			margin-top: 0.5in;
+			margin-bottom: 0.25in;
+		}
+		div.piece-container {
+			margin-top: 1in;
+			margin-bottom: 1in;
+			width: 100%;
+		}
+		.piece-header {
+			text-align: center;
+		}
+		.movement-header {
+			margin: 0px;
+		}
+		.score-container {
+			text-align: center;
+			margin: auto;
+	/*		overflow-x: scroll;
+			-webkit-overflow-scrolling: touch; */
+		}	
+		.return {
+			text-align: right;
+			font-size: small;
+		}
+	</style>
 </head>
 <body>
-<div id="stuke" class="piece-container">
-<h2>Piano St&uuml;ke</h2>
-<iframe src="https://www.youtube.com/embed/7B66WGATKFw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>	
-	<div class="score-container">
-		<object type="image/svg+xml" data="stuke1.svg">
-				Your browser does not support SVG
-		</object>
-	</div>
-	<div class="score-container">
-		<object type="image/svg+xml" data="stuke2.svg">
-				Your browser does not support SVG
-		</object>
-	</div>
-</div>
+	<!-- Begin Portfolio Block //-->
+	<div id="portfolio">
+		<h1>Portfolio of Compositions</h1>
+		<p id="composer"><strong>Zachary Viet Pine</strong></p>
+		<div id="contents">
+			<p id="contents-title">Contents</p>
+			<p> 1. <a href="#stuke">Piano St&uuml;ke</a>
+			<br>2. <a href="#bac">bac.mp3</a>
+			<br>3. <a href="#alternating">Alternating</a></p>
+		</div>
+		
+		<!-- PIANO STUKE //-->
+		<div id="stuke" class="piece-container">
+			<div class="piece-header">
+				<h2>Piano St&uuml;ke</h2>
+				<em>Download the <a href="./stuke.mp3">mp3</a> or
+					the <a href="./stuke.pdf">pdf</a>.</em>
+				<br>
+				<em><a href="https://youtu.be/7B66WGATKFw">Watch</a> the premier performance
+					by <a href="https://soundcloud.com/nate-ben-horin">Nate Ben-Horin</a>.</em>
+			</div>
+			<audio src="./stuke.mp3" controls ></audio>
+			<div class="score-container">
+				<h3 class="movement-header">I</h3>
+				<object type="image/svg+xml" data="stuke/web1.svg">
+					Your browser does not support SVG
+					Try downloading the <a href="./stuke.pdf">pdf</a>.</em>.
+				</object>
+			</div>
+			<div class="score-container">
+				<h3 class="movement-header">II</h3>
+				<object type="image/svg+xml" data="stuke/web2.svg">
+					Your browser does not support SVG.
+					Try downloading the <a href="./stuke.pdf">pdf</a>.</em>.
+				</object>
+			</div>
+			<p class="return"><a href="#top">Return to top</a><p>
+		</div>
+		<!-- end PIANO STUKE //-->
+		
+		<!-- BAC.MP3 //-->
+		<div id="bac" class="piece-container">
+			<div class="piece-header">
+				<h2>bac.mp3</h2>
+				<em>Download the <a href="./bac.mp3">mp3</a> or
+					the <a href="./bac.pdf">pdf</a>.</em>
+			</div>
+			<audio src="./bac.mp3" controls ></audio>
+			<div class="score-container">
+				<object type="image/svg+xml" data="./bac/web.svg">
+					Your browser does not support SVG
+					Try downloading the <a href="./bac.pdf">pdf</a>.</em>.
+				</object>
+			</div>
+			<p class="return"><a href="#top">Return to top</a><p>
+		</div>
+		<!-- end BAC.MP3 //-->
 
-<div id="bac" class="piece-container">
-<h2>bac.mp3</h2>
-<audio src="./bac.mp3" controls ></audio>
-	<div class="score-container">
-		<object type="image/svg+xml" data="bac.svg">
-				Your browser does not support SVG
-		</object>
+		<!-- ALTERNATING //-->
+		<div id="alternating" class="piece-container">
+			<div class="piece-header">
+				<h2>Alternating</h2>
+				<em>Download the <a href="./alternating.mp3">mp3</a>.</em>
+			</div>
+			<audio src="alternating.mp3" controls ></audio>
+			<p class="return"><a href="#top">Return to top</a><p>
+		</div>
+		<!-- end ALTERNATING //-->
+
 	</div>
-</div>
-
-<div id="alternating" class="piece-container">
-<h2>Alternating</h2>
-<audio src="alternating.mp3" controls ></audio>
-</div>
-
 </body>
 </html>
