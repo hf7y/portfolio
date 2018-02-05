@@ -1,134 +1,98 @@
-<html>
+<!doctype html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Portfolio of Compositions &mdash; Zachary Viet Pine</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<style>
-		#portfolio {
-			width: 6.5in;
-			margin: auto;
-		}
-		a {
-			text-decoration: none;
-		}
-		h1 {
-			text-align: center;
-		}
-		#composer {
-			text-align: right;
-		}
-		div#contents {
-			width: 1.25in;
-			margin: auto;
-			line-height: 121%;
-		}
-		p#contents-title {
-			text-align: center;
-		}
-
-		/* For the Scores */
-		h2 {
-			margin-bottom: 0px;
-		}
-		em {
-			font-size: small;
-		}
-		audio {
-			margin-top: 0.5in;
-			margin-bottom: 0.25in;
-		}
-		div.piece-container {
-			margin-top: 1in;
-			margin-bottom: 1in;
-			width: 100%;
-		}
-		.piece-header {
-			text-align: center;
-		}
-		.movement-header {
-			margin: 0px;
-		}
-		.score-container {
-			text-align: center;
-			margin: auto;
-	/*		overflow-x: scroll;
-			-webkit-overflow-scrolling: touch; */
-		}	
-		.return {
-			text-align: right;
-			font-size: small;
-		}
-	</style>
+  <title>Zachary Viet Pine &mdash; Selected Works</title>
+<!--  <base href="http://ocf.berkeley.edu/~pine/portfolio/"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href=".css">
 </head>
 <body>
-	<!-- Begin Portfolio Block //-->
-	<div id="portfolio">
-		<h1>Portfolio of Compositions</h1>
-		<p id="composer"><strong>Zachary Viet Pine</strong></p>
-		<div id="contents">
-			<p id="contents-title">Contents</p>
-			<p> 1. <a href="#stuke">Piano St&uuml;ke</a>
-			<br>2. <a href="#bac">bac.mp3</a>
-			<br>3. <a href="#alternating">Alternating</a></p>
-		</div>
-		
-		<!-- PIANO STUKE //-->
-		<div id="stuke" class="piece-container">
-			<div class="piece-header">
-				<h2>Piano St&uuml;ke</h2>
-				<em>Download the <a href="./stuke.mp3">mp3</a> or
-					the <a href="./stuke.pdf">pdf</a>.</em>
-				<br>
-				<em><a href="https://youtu.be/7B66WGATKFw">Watch</a> the premier performance
-					by <a href="https://soundcloud.com/nate-ben-horin">Nate Ben-Horin</a>.</em>
-			</div>
-			<audio src="./stuke.mp3" controls ></audio>
-			<div class="score-container">
-				<h3 class="movement-header">I</h3>
-				<object type="image/svg+xml" data="stuke/web1.svg">
-					Your browser does not support SVG
-					Try downloading the <a href="./stuke.pdf">pdf</a>.</em>.
-				</object>
-			</div>
-			<div class="score-container">
-				<h3 class="movement-header">II</h3>
-				<object type="image/svg+xml" data="stuke/web2.svg">
-					Your browser does not support SVG.
-					Try downloading the <a href="./stuke.pdf">pdf</a>.</em>.
-				</object>
-			</div>
-			<p class="return"><a href="#top">Return to top</a><p>
-		</div>
-		<!-- end PIANO STUKE //-->
-		
-		<!-- BAC.MP3 //-->
-		<div id="bac" class="piece-container">
-			<div class="piece-header">
-				<h2>bac.mp3</h2>
-				<em>Download the <a href="./bac.mp3">mp3</a> or
-					the <a href="./bac.pdf">pdf</a>.</em>
-			</div>
-			<audio src="./bac.mp3" controls ></audio>
-			<div class="score-container">
-				<object type="image/svg+xml" data="./bac/web.svg">
-					Your browser does not support SVG
-					Try downloading the <a href="./bac.pdf">pdf</a>.</em>.
-				</object>
-			</div>
-			<p class="return"><a href="#top">Return to top</a><p>
-		</div>
-		<!-- end BAC.MP3 //-->
-
-		<!-- ALTERNATING //-->
-		<div id="alternating" class="piece-container">
-			<div class="piece-header">
-				<h2>Alternating</h2>
-				<em>Download the <a href="./alternating.mp3">mp3</a>.</em>
-			</div>
-			<audio src="alternating.mp3" controls ></audio>
-			<p class="return"><a href="#top">Return to top</a><p>
-		</div>
-		<!-- end ALTERNATING //-->
-
-	</div>
+  <header>
+    <h1>Zachary Viet Pine</h1>
+    <h2>Selected Works</h2>
+    <nav>
+      <h4>Contents</h4>
+      <ol id="table-of-contents">
+        <li><a href="#stuke">Piano St&uuml;ke</a></li>
+        <li><a href="#bac">The Bach Inquiry</a></li>
+        <li><a href="#alternating">Alternating</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main>
+    <article id="stuke">
+      <header>
+        <h2>Piano St&uuml;ke</h2>
+        <i>Download the <a href="./stuke.mp3">mp3</a>
+           or the <a href="./stuke.pdf">pdf</a>.</i>
+        <br>
+        <details>
+	        <summary>
+	          <i><a>Watch the premier performance</a></i>
+	          <i>by Nate Ben-Horin.</i>            
+	        </summary>
+	        <iframe src="https://www.youtube.com/embed/7B66WGATKFw" ></iframe>
+          </details>
+          <audio src="./stuke.mp3" type="audio/mp3" controls ></audio>
+        </header>
+        <section class="score">        
+        <picture>
+	        <h3>I</h3>
+	        <img src="stuke/web1.svg" 
+	          alt="Score for Piano Stuke, Movement I"  />
+        </picture>        
+        <picture>
+      	  <h3>II</h3>
+	        <img src="stuke/web1.svg"
+	          alt="Score for Piano Stuke, Movement II" />
+        </picture>
+      </section>
+    </article>
+    <article id="bac">
+      <header>
+        <h2>The Bach Inquiry</h2>
+		<h3>Introduction</h2>
+        <p>Two works, an acousmatic deconstruction and an electro-acoustic
+           reconstruction, make up this collection.</p>
+        <p>The composition of <a href="#bacmp3">bac.mp3</a> began with a
+           digital sample of J.S.&nbsp;Bach's imperishable <i>Cello Suite in
+           G&nbsp;major</i>. Digital audio manipulations amplify the fricative
+           timbres of the cello. These timbres are then placed
+           in dialog with found-sounds gathered from the composer's environment, 
+		   specifically the inharmonic automobile.</p>
+        <p><a href="#bach">B&aacute;c H.</a> is a loose transcription of 
+		   bac.mp3 for live performance of solo cello with looped playback.</p>
+      </header>
+      <section id="bacmp3" class="composition">
+        <header>
+          <h3>bac.mp3</h3>
+          <i>Download the <a href="./bac.mp3">mp3</a>.</i>
+          <audio src="./bac.mp3" controls ></audio>
+        </header>
+      </section>
+      <section id="bach" class="composition">
+        <header>
+          <h3>B&aacute;c H.</h3>
+          <i>Download the <a href="./bac.pdf">pdf</a>.</i>
+        </header>
+        <picture>
+          <img src="./bac/web.svg" alt="Score for Bac H." />
+        </picture>
+      </section>
+    </article>
+    <article id="alternating">
+      <section class="composition">
+        <header>
+          <h2>Alternating</h2>
+          <i>Download the <a href="./alternating.mp3">mp3</a>.</i>
+          <audio src="alternating.mp3" controls ></audio>      
+        </header>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <small hidden><a href="#top">Return to top.</a></small>
+  </footer>
 </body>
 </html>

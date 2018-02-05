@@ -1,0 +1,66 @@
+a { 
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover { 
+  text-decoration: underline;
+}
+
+body {
+  max-width: 816px;
+  margin: 96px auto;
+  text-align: center;
+}
+h2, h3{
+  margin: 0.2em 0;
+}
+
+nav h4 {
+  width: 120px;
+  margin: 72px auto 12px auto;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+}
+nav ol {
+  padding: 0;
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  line-height: 150%;
+}
+
+article {
+  padding: 1em;
+}
+ 
+article header {
+  min-height: 6.5em;
+  position: relative;
+  margin: 4em auto 0 auto;
+}
+
+article p {
+  margin: 1em 6em;
+  text-align: left;
+}
+
+summary i {
+  display: inline-block;
+}
+
+iframe {
+  position: relative;
+  margin: 12px auto -12px auto;
+  width: 640px;
+  height: 360px;
+  z-index: 100;
+}
+audio {
+  max-height: 1em;
+  position: absolute;
+  margin: auto;
+  right: 0; bottom: 0; left: 0;
+}
+
+img {
+  max-width: 100%;
+}
