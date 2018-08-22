@@ -50,6 +50,7 @@ article p {
   max-width: 90vw;
   margin: 1em auto;
   text-align: justify;
+  text-indent: 2em;
 }
 /* 04 Media Objects */
 audio {
